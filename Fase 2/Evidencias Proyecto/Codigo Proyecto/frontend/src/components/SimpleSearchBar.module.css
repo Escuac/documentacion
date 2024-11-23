@@ -1,0 +1,32 @@
+.fake-input {
+  position: relative;
+  display: flex;
+  padding: 0;
+  align-items: center;
+  width: 100%;
+  border: 2px solid hsl(var(--border));
+  border-radius: 8px;
+  padding-block: 2px;
+  padding-left: .8rem;
+  padding-right: .5rem;
+}
+
+.search-icon {
+  width: 1.5rem;
+  height: 1.5rem;
+  margin-right: .6rem;
+  color: hsl(var(--foreground));
+}
+
+.invisible-input {
+  border: none;
+  background-color: transparent;
+  width: 100%;
+  padding: 0;
+  border-radius: 0;
+}
+
+.invisible-input:focus {
+  border: none;
+  background-color: transparent;
+}

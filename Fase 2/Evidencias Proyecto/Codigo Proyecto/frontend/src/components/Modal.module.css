@@ -1,0 +1,36 @@
+.backdrop {
+    display: grid;
+    place-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, .5);
+    height: 100dvh;
+    width: 100dvw;
+    z-index: 50;
+}
+
+.container {
+    width: 70%;
+    min-width: 500px;
+    max-width: 1000px;
+    max-height: 90%;
+    background-color: hsl(var(--background));
+    border-radius: 1.5rem;
+    padding: .6rem;
+    box-sizing: border-box;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+.content {
+    overflow: auto;
+    max-height: 100%;
+}
+
+@screen md {
+    .container {
+        padding: 1rem;
+    }
+  }

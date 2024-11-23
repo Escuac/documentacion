@@ -1,0 +1,31 @@
+.contenedor-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  align-items: center;
+  padding-inline: .3rem;
+  padding-block: 1rem;
+
+  & h2 {
+    color: hsl(var(--foreground));
+    font-size: 1.7rem;
+    font-weight: 600;
+    margin-bottom: 2.5rem;
+  }
+
+  & textarea {
+    padding: .5rem;
+  }
+
+  & input, select {
+    height: 2.5rem;
+  }
+}
+
+@screen md {
+  .contenedor-form {
+    padding-inline: 2rem;
+  }
+}

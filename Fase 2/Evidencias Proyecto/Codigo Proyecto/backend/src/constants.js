@@ -1,0 +1,6 @@
+export const PAYMENT_STATUS = {
+  FUTURE: 0,
+  ACTIVE: 1,
+  EXPIRED_DATE: 2,
+  EXPIRED_CL: 3
+};

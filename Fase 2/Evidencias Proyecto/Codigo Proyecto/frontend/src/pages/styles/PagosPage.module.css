@@ -1,0 +1,42 @@
+.main-container {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 3rem;
+}
+
+.pagos-container, .planes-container {
+  flex: 1;
+  /* border: 1px solid black; */
+}
+
+.pagos-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.planes-container {
+  /* background-color: rgb(223, 225, 179); */
+}
+
+.action-button-container{
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.action-button {
+  width: 25px;
+  height: 25px;
+  padding: 0;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@screen lg {
+  .main-container {
+    flex-direction: row;
+  }
+}

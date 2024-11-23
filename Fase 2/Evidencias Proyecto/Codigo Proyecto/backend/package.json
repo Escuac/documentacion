@@ -1,0 +1,30 @@
+{
+  "name": "backend",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "dev": "node --env-file .env --watch src/index.js",
+    "start": "node --env-file .env ./src/index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "packageManager": "pnpm@9.7.1+sha512.faf344af2d6ca65c4c5c8c2224ea77a81a5e8859cbc4e06b1511ddce2f0151512431dd19e6aff31f2c6a8f5f2aced9bd2273e1fed7dd4de1868984059d2c4247",
+  "dependencies": {
+    "bcrypt": "5.1.1",
+    "cookie-parser": "1.4.6",
+    "date-fns": "4.1.0",
+    "express": "4.19.2",
+    "jsonwebtoken": "9.0.2",
+    "mysql2": "3.11.0",
+    "pino": "9.4.0",
+    "pino-pretty": "11.2.2",
+    "zod": "3.23.8"
+  },
+  "devDependencies": {
+    "standard": "17.1.0"
+  }
+}

@@ -1,0 +1,37 @@
+services:
+  backend:
+        build:
+          dockerfile: backend.Dockerfile
+        ports:
+          - "5000:5000"
+        restart: always
+        depends_on:
+          - mariadb
+        volumes:
+        - ./backend:/app/backend
+        - /app/backend/node_modules
+  frontend:
+      build:
+        dockerfile: frontend.Dockerfile
+      ports:
+        - "5173:5173"
+      volumes:
+        - ./frontend:/app/frontend
+        - /app/frontend/node_modules
+      restart: always
+  mariadb:
+    image: mariadb:latest
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: ${MYSQL_ROOT_PASSWORD}
+      MYSQL_DATABASE: ${MYSQL_DATABASE}
+      MYSQL_USER: ${MYSQL_USER}
+      MYSQL_PASSWORD: ${MYSQL_PASSWORD}
+    ports:
+      - "3306:3306"
+    volumes:
+      - db_data:/var/lib/mysql
+      - ./init-db.sql:/docker-entrypoint-initdb.d/init-db.sql
+
+volumes:
+  db_data:

@@ -1,0 +1,15 @@
+.container {
+  max-width: 1500px;
+  margin-inline: auto;
+  display: flex;
+  flex-direction: column;
+  padding-inline: 2rem;
+}
+
+.action-button {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+  align-items: center;
+}

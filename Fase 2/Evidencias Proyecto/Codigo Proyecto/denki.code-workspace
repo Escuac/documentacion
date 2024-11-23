@@ -1,0 +1,25 @@
+{
+	"folders": [
+		{
+			"path": "backend"
+		},
+		{
+			"path": "frontend"
+		},
+		{
+			"path": "mobile"
+		},
+		{
+			"path": "qrlector"
+		}
+	],
+	"extensions": {
+		"recommendations": [
+			"usernamehw.errorlens",
+			"dbaeumer.vscode-eslint",
+			"mhutchie.git-graph",
+			"xabikos.javascriptsnippets",
+			"pkief.material-icon-theme"
+		]
+	}
+}

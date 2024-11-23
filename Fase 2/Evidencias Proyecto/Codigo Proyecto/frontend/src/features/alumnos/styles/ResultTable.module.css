@@ -1,0 +1,81 @@
+* {
+  --avatar-size: 2.5rem;
+}
+
+.users-table {
+  width: 100%;
+  & td {
+    /* border: 1px solid black; */
+    text-align: center;
+    padding-inline: .6rem;
+  }
+  
+  & tr {
+    height: 3.5rem;
+    border-bottom: 1px solid hsl(var(--border));
+  }
+
+  & tr:last-child {
+    border-bottom: none;
+  }
+}
+
+.table-header {
+  & th {
+    font-weight: 500;
+    background-color: hsl(var(--background-secondary));
+  }
+  & th:first-child {
+    border-top-left-radius: .7rem;
+  }
+
+  & th:last-child {
+    border-top-right-radius: .7rem;
+  }
+  
+  height: 3rem;
+  
+}
+
+.action-button {
+  width: 30px;
+  height: 30px;
+  padding: 0;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.action-button-container{
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+}
+
+.run-tag{
+  @apply bg-primary/80 text-sm text-foreground text-white;
+  border-radius: .5rem;
+  padding-inline: .5rem;
+}
+
+.avatar {
+  height: var(--avatar-size);
+  width: var(--avatar-size);
+  @apply bg-border;
+  border-radius: 50%;
+  margin-inline: 1rem;
+}
+
+.alumno-container{
+  display: flex;
+  align-items: center;
+  /* justify-content: center; */
+}
+
+@media (max-width: 640px) {
+
+  .avatar {
+    display: none;
+  }
+}
